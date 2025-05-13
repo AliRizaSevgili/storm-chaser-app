@@ -1,14 +1,16 @@
 
-
+import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function WeatherScreen() {
+const WeatherScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Storm Chaser App - Weather Screen</Text>
     </View>
   );
-}
+};
+
+export default WeatherScreen;
 
 const styles = StyleSheet.create({
   container: {
