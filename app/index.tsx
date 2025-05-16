@@ -1,51 +1,40 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, ActivityIndicator, Alert } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import * as Location from 'expo-location';
 import axios from 'axios';
+import { useRouter } from 'expo-router';
 
 export default function WeatherScreen() {
-  // State to store weather data
-  const [weather, setWeather] = useState<any>(null);
+  const router = useRouter();
 
-  // State to track loading status
+  const [weather, setWeather] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [coords, setCoords] = useState<{ latitude: number; longitude: number } | null>(null);
 
   useEffect(() => {
-    // This function runs when the component mounts
     const fetchWeather = async () => {
       try {
-        // Ask for location permission
         const { status } = await Location.requestForegroundPermissionsAsync();
-        
         if (status !== 'granted') {
           Alert.alert('Permission Required', 'Location permission was not granted.');
           setLoading(false);
           return;
         }
 
-        
-
-        // Get current GPS location
         const location = await Location.getCurrentPositionAsync({});
         const { latitude, longitude } = location.coords;
+        setCoords({ latitude, longitude });
         console.log("Latitude:", latitude, "Longitude:", longitude);
-        <Text style={styles.text}>📍 Location: {latitude}, {longitude}</Text>
 
-
-
-        // Call Open-Meteo API to get weather data
         const response = await axios.get(
-          `https://api.open-meteo.com/v1/forecast?latitude=43.6461&longitude=-79.3916&current=temperature_2m,wind_speed_10m,precipitation
-`
+          `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,wind_speed_10m,precipitation`
         );
 
-        // Store weather data in state
         setWeather(response.data.current);
       } catch (error) {
         console.error(error);
         Alert.alert('Error', 'Failed to fetch weather data.');
       } finally {
-        // Hide loading indicator
         setLoading(false);
       }
     };
@@ -53,7 +42,6 @@ export default function WeatherScreen() {
     fetchWeather();
   }, []);
 
-  // Show loading spinner while data is being fetched
   if (loading) {
     return (
       <View style={styles.container}>
@@ -63,7 +51,6 @@ export default function WeatherScreen() {
     );
   }
 
-  // Show "not found" message if no data is available
   if (!weather) {
     return (
       <View style={styles.container}>
@@ -72,17 +59,21 @@ export default function WeatherScreen() {
     );
   }
 
-  // Show weather information
   return (
     <View style={styles.container}>
       <Text style={styles.text}>🌡️ Temperature: {weather.temperature_2m}°C</Text>
       <Text style={styles.text}>💨 Wind Speed: {weather.wind_speed_10m} km/h</Text>
       <Text style={styles.text}>🌧️ Precipitation: {weather.precipitation} mm</Text>
+      {coords && (
+        <Text style={styles.text}>📍 Location: {coords.latitude.toFixed(4)}, {coords.longitude.toFixed(4)}</Text>
+      )}
+      <TouchableOpacity onPress={() => router.push('/capture')} style={styles.button}>
+        <Text style={styles.buttonText}>📷 Go to Camera</Text>
+      </TouchableOpacity>
     </View>
   );
 }
 
-// Basic styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -94,5 +85,15 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
     fontSize: 18,
+  },
+  button: {
+    marginTop: 20,
+    padding: 12,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+  },
+  buttonText: {
+    fontWeight: 'bold',
+    color: '#001d3d',
   },
 });
