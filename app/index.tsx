@@ -16,19 +16,27 @@ export default function WeatherScreen() {
       try {
         // Ask for location permission
         const { status } = await Location.requestForegroundPermissionsAsync();
+        
         if (status !== 'granted') {
           Alert.alert('Permission Required', 'Location permission was not granted.');
           setLoading(false);
           return;
         }
 
+        
+
         // Get current GPS location
         const location = await Location.getCurrentPositionAsync({});
         const { latitude, longitude } = location.coords;
+        console.log("Latitude:", latitude, "Longitude:", longitude);
+        <Text style={styles.text}>📍 Location: {latitude}, {longitude}</Text>
+
+
 
         // Call Open-Meteo API to get weather data
         const response = await axios.get(
-          `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,wind_speed_10m,precipitation`
+          `https://api.open-meteo.com/v1/forecast?latitude=43.6461&longitude=-79.3916&current=temperature_2m,wind_speed_10m,precipitation
+`
         );
 
         // Store weather data in state
