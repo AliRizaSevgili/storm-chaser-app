@@ -3,11 +3,10 @@ import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native
 import { Camera } from 'expo-camera';
 
 export default function CaptureScreen() {
-  // 💡 Web'deysen kamera desteklenmiyor ekranı göster
   if (Platform.OS === 'web') {
     return (
       <View style={styles.centered}>
-        <Text style={styles.text}>🚫 Camera is not supported on web platform.</Text>
+        <Text style={styles.text}>🚫 Camera is not supported on web.</Text>
       </View>
     );
   }
