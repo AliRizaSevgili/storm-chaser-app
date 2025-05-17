@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
-import  Camera  from 'expo-camera'; 
+import { Camera, requestCameraPermissionsAsync } from 'expo-camera';
 
 export default function CaptureScreen() {
   if (Platform.OS === 'web') {
@@ -12,19 +12,13 @@ export default function CaptureScreen() {
   }
 
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
-  const [type, setType] = useState(() => {
-    try {
-      return Camera.Constants.Type.back;
-    } catch {
-      return 0;
-    }
-  });
-
-  const cameraRef = useRef<Camera | null>(null);
+  const [type, setType] = useState<'back' | 'front'>('back');
+  const cameraRef = useRef<any>(null);
 
   useEffect(() => {
     (async () => {
-      const { status } = await Camera.requestCameraPermissionsAsync();
+      const { status } = await requestCameraPermissionsAsync();
+      console.log('📷 Camera permission status:', status);
       setHasPermission(status === 'granted');
     })();
   }, []);
