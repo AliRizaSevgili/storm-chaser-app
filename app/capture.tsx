@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
-import { Camera } from 'expo-camera';
+import  Camera  from 'expo-camera'; 
 
 export default function CaptureScreen() {
   if (Platform.OS === 'web') {
@@ -12,7 +12,14 @@ export default function CaptureScreen() {
   }
 
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
-  const [type, setType] = useState(Camera.Constants.Type.back);
+  const [type, setType] = useState(() => {
+    try {
+      return Camera.Constants.Type.back;
+    } catch {
+      return 0;
+    }
+  });
+
   const cameraRef = useRef<Camera | null>(null);
 
   useEffect(() => {
