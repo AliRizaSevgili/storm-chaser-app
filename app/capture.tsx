@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
 import { Camera, requestCameraPermissionsAsync } from 'expo-camera';
+import React, { useEffect, useRef, useState } from 'react';
+import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function CaptureScreen() {
   if (Platform.OS === 'web') {

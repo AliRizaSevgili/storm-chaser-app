@@ -1,4 +1,5 @@
-package com.anonymous.stormchaserapp
+package com.stormchaserapp
+
 
 import android.os.Build
 import android.os.Bundle
@@ -15,7 +16,7 @@ class MainActivity : ReactActivity() {
     // Set the theme to AppTheme BEFORE onCreate to support
     // coloring the background, status bar, and navigation bar.
     // This is required for expo-splash-screen.
-    setTheme(R.style.AppTheme);
+    // setTheme(R.style.AppTheme);
     super.onCreate(null)
   }
 
@@ -32,7 +33,7 @@ class MainActivity : ReactActivity() {
   override fun createReactActivityDelegate(): ReactActivityDelegate {
     return ReactActivityDelegateWrapper(
           this,
-          BuildConfig.IS_NEW_ARCHITECTURE_ENABLED,
+          false,
           object : DefaultReactActivityDelegate(
               this,
               mainComponentName,
