@@ -1,3 +1,5 @@
+console.log("📱 App starting...");
+
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import * as Location from 'expo-location';
@@ -13,6 +15,7 @@ export default function WeatherScreen() {
   const [coords, setCoords] = useState<{ latitude: number; longitude: number } | null>(null);
 
   useEffect(() => {
+    console.log("🚀 App başladı"); 
     const fetchWeather = async () => {
       try {
         const { status } = await Location.requestForegroundPermissionsAsync();
