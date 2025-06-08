@@ -1,11 +1,10 @@
-console.log("📱 App starting...");
+console.log("✅ WeatherScreen loaded");
 
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import * as Location from 'expo-location';
 import axios from 'axios';
 import { useRouter } from 'expo-router';
-
 
 export default function WeatherScreen() {
   const router = useRouter();
