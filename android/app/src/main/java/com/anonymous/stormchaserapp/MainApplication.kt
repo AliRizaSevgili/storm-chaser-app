@@ -2,7 +2,7 @@ package com.anonymous.stormchaserapp
 
 import android.app.Application
 import android.content.res.Configuration
-import com.anonymous.stormchaserapp.BuildConfig
+
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactNativeHost
