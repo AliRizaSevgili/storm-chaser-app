@@ -8,25 +8,43 @@ import {
   Image,
 } from 'react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
+import { router } from 'expo-router';
+import * as MediaLibrary from 'expo-media-library'; // <-- EKLE
 
 export default function CaptureScreen() {
   const [permission, requestPermission] = useCameraPermissions();
-  const [type, setType] = useState<'back' | 'front'>('back'); // 'back' or 'front'
+  const [type, setType] = useState<'back' | 'front'>('back');
   const [photoUri, setPhotoUri] = useState<string | null>(null);
   const cameraRef = useRef<any>(null);
 
   useEffect(() => {
-    if (!permission) {
-      requestPermission();
-    }
-  }, [permission]);
+  if (!permission) {
+    requestPermission();
+  }
+}, [permission]);
 
-  const takePhoto = async () => {
-    if (cameraRef.current) {
-      const photo = await cameraRef.current.takePictureAsync();
-      setPhotoUri(photo.uri);
+useEffect(() => {
+  (async () => {
+    const { status } = await MediaLibrary.requestPermissionsAsync();
+    if (status !== 'granted') {
+      alert('Media library permission is required!');
     }
-  };
+  })();
+}, []);
+
+const takePhoto = async () => {
+  if (cameraRef.current) {
+    const photo = await cameraRef.current.takePictureAsync();
+    //
+    const asset = await MediaLibrary.createAssetAsync(photo.uri);
+    setPhotoUri(asset.uri);
+    console.log('Galeriye kaydedilen photoUri:', asset.uri);
+    router.push({
+      pathname: '/metadata',
+      params: { photoUri: asset.uri },
+    });
+  }
+};
 
   if (Platform.OS === 'web') {
     return (
