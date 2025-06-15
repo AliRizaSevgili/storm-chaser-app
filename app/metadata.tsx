@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import * as Location from 'expo-location';
 
@@ -7,6 +7,11 @@ export default function MetadataScreen() {
   const { photoUri } = useLocalSearchParams();
   const [weather, setWeather] = useState('');
   const [location, setLocation] = useState<{ latitude: number; longitude: number } | null>(null);
+  const [dateTime, setDateTime] = useState<string>(() => {
+    const now = new Date();
+    return now.toLocaleString();
+  });
+  const [description, setDescription] = useState('');
 
   useEffect(() => {
     (async () => {
@@ -62,6 +67,20 @@ export default function MetadataScreen() {
           ? `Latitude: ${location.latitude}\nLongitude: ${location.longitude}`
           : 'Getting location...'}
       </Text>
+
+      {/* Date & Time alanı */}
+      <Text style={styles.label}>Date & Time</Text>
+      <Text style={styles.dateTime}>{dateTime}</Text>
+
+      {/* Description / Notes alanı */}
+      <Text style={styles.label}>Description / Notes</Text>
+      <TextInput
+        style={styles.textInput}
+        placeholder="Enter a description or notes..."
+        value={description}
+        onChangeText={setDescription}
+        multiline
+      />
     </View>
   );
 }
@@ -80,9 +99,21 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     color: '#333',
   },
+  dateTime: { color: '#333', marginBottom: 8, textAlign: 'center' },
   selected: {
     backgroundColor: '#0077b6',
     color: '#fff',
+  },
+  textInput: {
+    width: '80%',
+    minHeight: 60,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    padding: 8,
+    backgroundColor: '#fff',
+    marginBottom: 16,
+    textAlignVertical: 'top',
   },
   selectedValue: { marginBottom: 8, color: '#444' },
   location: { color: '#333', marginBottom: 8, textAlign: 'center' },
