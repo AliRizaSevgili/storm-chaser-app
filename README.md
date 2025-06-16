@@ -20,22 +20,19 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 -Open-Meteo API
 
 ## Screenshots
+![Weather Info](screenshots/weather-info.png)
 
-[Weather Info] ![Screenshot_1750107612](https://github.com/user-attachments/assets/9d39f384-9c9d-4455-b4d7-be14b58a1db4)
+![Capture Storm](screenshots/capture-storm.png)
 
-[Capture Storm] ![Screenshot_1750107633](https://github.com/user-attachments/assets/7ad3e369-ddf8-4f09-961d-46698cf40f11)
+![Storm Details](screenshots/storm-details.png)
 
-[Storm Details] ![Screenshot_1750107664](https://github.com/user-attachments/assets/261e30a6-9078-45c8-8bec-1c02035a113a)
+![Success Popup](screenshots/success-popup.png)
 
-[Success Pop-op] ![Screenshot_1750107668](https://github.com/user-attachments/assets/7bd02bb3-6f65-44ad-8481-3c42ea42a4c2)
+![Saved Entries](screenshots/saved-entries.png)
 
-[Saved Entries] ![Screenshot_1750107750](https://github.com/user-attachments/assets/1d6b972e-eeb3-4978-9851-758d677f471f)
-
-
+![QR Code](screenshots/qr.png)
 
 
-![Metadata Screen](screenshots/metadata.png)
-![Entries Screen](screenshots/entries.png)
 
 ## Try Instantly
 
