@@ -27,34 +27,21 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 
 ## Screenshots
 
-<div align="center">
+<p align="center">
+  <img src="screenshots/weather-info.png" alt="Weather Info" width="140" style="margin-right: 18px;"/>
+  <img src="screenshots/capture-storm.png" alt="Capture Storm" width="140" style="margin-right: 18px;"/>
+  <img src="screenshots/storm-details.png" alt="Storm Details" width="140" style="margin-right: 18px;"/>
+  <img src="screenshots/success-popup.png" alt="Success Popup" width="140" style="margin-right: 18px;"/>
+  <img src="screenshots/saved-entries.png" alt="Saved Entries" width="140"/>
+</p>
 
-  <div style="display: inline-block; margin: 0 18px;">
-    <img src="screenshots/weather-info.png" alt="Weather Info" width="150"/><br/>
-    <b>Weather Info</b>
-  </div>
-
-  <div style="display: inline-block; margin: 0 18px;">
-    <img src="screenshots/capture-storm.png" alt="Capture Storm" width="150"/><br/>
-    <b>Capture Storm</b>
-  </div>
-
-  <div style="display: inline-block; margin: 0 18px;">
-    <img src="screenshots/storm-details.png" alt="Storm Details" width="150"/><br/>
-    <b>Storm Details</b>
-  </div>
-
-  <div style="display: inline-block; margin: 0 18px;">
-    <img src="screenshots/success-popup.png" alt="Success Popup" width="150"/><br/>
-    <b>Success Popup</b>
-  </div>
-
-  <div style="display: inline-block; margin: 0 18px;">
-    <img src="screenshots/saved-entries.png" alt="Saved Entries" width="150"/><br/>
-    <b>Saved Entries</b>
-  </div>
-
-</div>
+<p align="center">
+  <b>Weather Info</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Capture Storm</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Storm Details</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Success Popup</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Saved Entries</b>
+</p>
 
 ## Try Instantly
 
