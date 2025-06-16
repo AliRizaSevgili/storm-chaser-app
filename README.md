@@ -27,21 +27,15 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 
 ## Screenshots
 
-<p align="center">
-  <img src="screenshots/weather-info.png" alt="Weather Info" width="140" style="margin-right: 18px;"/>
-  <img src="screenshots/capture-storm.png" alt="Capture Storm" width="140" style="margin-right: 18px;"/>
-  <img src="screenshots/storm-details.png" alt="Storm Details" width="140" style="margin-right: 18px;"/>
-  <img src="screenshots/success-popup.png" alt="Success Popup" width="140" style="margin-right: 18px;"/>
-  <img src="screenshots/saved-entries.png" alt="Saved Entries" width="140"/>
-</p>
-
-<p align="center">
-  <b>Weather Info</b>&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Capture Storm</b>&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Storm Details</b>&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Success Popup</b>&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Saved Entries</b>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="screenshots/weather-info.png" width="120"/><br/><b>Weather Info</b></td>
+    <td align="center"><img src="screenshots/capture-storm.png" width="120"/><br/><b>Capture Storm</b></td>
+    <td align="center"><img src="screenshots/storm-details.png" width="120"/><br/><b>Storm Details</b></td>
+    <td align="center"><img src="screenshots/success-popup.png" width="120"/><br/><b>Success Popup</b></td>
+    <td align="center"><img src="screenshots/saved-entries.png" width="120"/><br/><b>Saved Entries</b></td>
+  </tr>
+</table>
 
 ## Try Instantly
 
