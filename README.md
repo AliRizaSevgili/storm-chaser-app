@@ -1,6 +1,49 @@
-# Welcome to your Expo app 👋
+## Storm Chaser App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native app for documenting and classifying storm events with photo, weather, location, and notes.
+This project was built as a portfolio/demo app to showcase mobile development skills, including API integration, local storage, and multi-screen navigation.
+
+## Features
+
+- 📸 Take and save storm photos with metadata
+- 🌦️ Weather API integration (Open-Meteo)
+- 📍 Automatic location capture
+- 📝 Add notes and classify storm type
+- 💾 Local data persistence (AsyncStorage)
+- 📋 View and manage saved entries
+
+## Tech Stacks
+
+-React Native (Expo)
+-AsyncStorage
+-Expo Location & Camera
+-Open-Meteo API
+
+## Screenshots
+
+[Weather Info] ![Screenshot_1750107612](https://github.com/user-attachments/assets/9d39f384-9c9d-4455-b4d7-be14b58a1db4)
+
+[Capture Storm] ![Screenshot_1750107633](https://github.com/user-attachments/assets/7ad3e369-ddf8-4f09-961d-46698cf40f11)
+
+[Storm Details] ![Screenshot_1750107664](https://github.com/user-attachments/assets/261e30a6-9078-45c8-8bec-1c02035a113a)
+
+[Success Pop-op] ![Screenshot_1750107668](https://github.com/user-attachments/assets/7bd02bb3-6f65-44ad-8481-3c42ea42a4c2)
+
+[Saved Entries] ![Screenshot_1750107750](https://github.com/user-attachments/assets/1d6b972e-eeb3-4978-9851-758d677f471f)
+
+
+
+
+![Metadata Screen](screenshots/metadata.png)
+![Entries Screen](screenshots/entries.png)
+
+## Try Instantly
+
+Scan the QR code below with [Expo Go](https://expo.dev/client) to try the app on your device:
+
+[QR Code]
+
+![image](https://github.com/user-attachments/assets/ec37c895-90cd-49d4-b906-11a58e93459b)
 
 ## Get started
 
