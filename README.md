@@ -1,7 +1,9 @@
 ## Storm Chaser App
 
-A React Native app for documenting and classifying storm events with photo, weather, location, and notes.
+A React Native app for documenting and classifying storm events with photo, weather, location, and notes.  
 This project was built as a portfolio/demo app to showcase mobile development skills, including API integration, local storage, and multi-screen navigation.
+
+---
 
 ## Features
 
@@ -12,82 +14,68 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 - 💾 Local data persistence (AsyncStorage)
 - 📋 View and manage saved entries
 
-## Tech Stacks
+---
 
--React Native (Expo)
--AsyncStorage
--Expo Location & Camera
--Open-Meteo API
+## Tech Stack
+
+- React Native (Expo)
+- AsyncStorage
+- Expo Location & Camera
+- Open-Meteo API
+
+---
 
 ## Screenshots
 
-[Weather Info] ![Screenshot_1750107612](https://github.com/user-attachments/assets/9d39f384-9c9d-4455-b4d7-be14b58a1db4)
+**Weather Info**  
+![Weather Info](screenshots/weather-info.png)
 
-[Capture Storm] ![Screenshot_1750107633](https://github.com/user-attachments/assets/7ad3e369-ddf8-4f09-961d-46698cf40f11)
+**Capture Storm**  
+![Capture Storm](screenshots/capture-storm.png)
 
-[Storm Details] ![Screenshot_1750107664](https://github.com/user-attachments/assets/261e30a6-9078-45c8-8bec-1c02035a113a)
+**Storm Details**  
+![Storm Details](screenshots/storm-details.png)
 
-[Success Pop-op] ![Screenshot_1750107668](https://github.com/user-attachments/assets/7bd02bb3-6f65-44ad-8481-3c42ea42a4c2)
+**Success Popup**  
+![Success Popup](screenshots/success-popup.png)
 
-[Saved Entries] ![Screenshot_1750107750](https://github.com/user-attachments/assets/1d6b972e-eeb3-4978-9851-758d677f471f)
+**Saved Entries**  
+![Saved Entries](screenshots/saved-entries.png)
 
-
-
-
-![Metadata Screen](screenshots/metadata.png)
-![Entries Screen](screenshots/entries.png)
+---
 
 ## Try Instantly
 
 Scan the QR code below with [Expo Go](https://expo.dev/client) to try the app on your device:
 
-[QR Code]
+![QR Code](screenshots/qr.png)
 
-![image](https://github.com/user-attachments/assets/ec37c895-90cd-49d4-b906-11a58e93459b)
+---
 
-## Get started
+## Get Started
 
-1. Install dependencies
+1. **Install dependencies**
+    ```bash
+    npm install
+    ```
+2. **Start the app**
+    ```bash
+    npx expo start
+    ```
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
+You’ll find options to open the app in:
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction/).
 
-## Get a fresh project
+---
+
+## Get a Fresh Project
 
 When you're ready, run:
 
 ```bash
 npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
