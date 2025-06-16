@@ -1,4 +1,4 @@
-## Storm Chaser App
+# Storm Chaser App
 
 A React Native app for documenting and classifying storm events with photo, weather, location, and notes.  
 This project was built as a portfolio/demo app to showcase mobile development skills, including API integration, local storage, and multi-screen navigation.
@@ -37,6 +37,8 @@ This project was built as a portfolio/demo app to showcase mobile development sk
   </tr>
 </table>
 
+---
+
 ## Try Instantly
 
 <div align="center">
@@ -48,6 +50,8 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 <img src="screenshots/qr.png" alt="Expo Go QR Code" width="180"/>
 
 </div>
+
+---
 
 ## Get Started
 
@@ -61,10 +65,10 @@ This project was built as a portfolio/demo app to showcase mobile development sk
     ```
 
 You’ll find options to open the app in:
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- development build
+- Android emulator
+- iOS simulator
+- Expo Go (for quick testing)
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction/).
 
