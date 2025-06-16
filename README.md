@@ -39,11 +39,15 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 
 ## Try Instantly
 
-Scan the QR code below with [Expo Go](https://expo.dev/client) to try the app on your device:
+<div align="center">
 
-![QR Code](screenshots/qr.png)
+<b>Scan this QR code with <a href="https://expo.dev/client" target="_blank">Expo Go</a> to try the app instantly on your device:</b>
 
----
+<br/><br/>
+
+<img src="screenshots/qr.png" alt="Expo Go QR Code" width="180"/>
+
+</div>
 
 ## Get Started
 
