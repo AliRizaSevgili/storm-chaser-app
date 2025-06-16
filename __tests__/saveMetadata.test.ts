@@ -1,3 +1,5 @@
+
+jest.mock('@react-native-async-storage/async-storage');
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 it('should save metadata to AsyncStorage', async () => {
