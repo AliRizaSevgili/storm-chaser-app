@@ -73,6 +73,9 @@ export default function WeatherScreen() {
       <TouchableOpacity onPress={() => router.push('/capture')} style={styles.button}>
         <Text style={styles.buttonText}>📷 Go to Camera</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => router.push('/entries')} style={styles.button}>
+      <Text style={styles.buttonText}>📋 View Saved Entries</Text>
+    </TouchableOpacity>
     </View>
   );
 }
