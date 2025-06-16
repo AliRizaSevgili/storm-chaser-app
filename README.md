@@ -24,6 +24,10 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 - Open-Meteo API
 
 ---
+## Demo Video
+
+[▶️ Watch Demo Video](https://vimeo.com/1093872578?share=copy)
+
 
 ## Screenshots
 
