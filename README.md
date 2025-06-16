@@ -27,22 +27,17 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 
 ## Screenshots
 
-**Weather Info**  
-![Weather Info](screenshots/weather-info.png)
+## Screenshots
 
-**Capture Storm**  
-![Capture Storm](screenshots/capture-storm.png)
+<div align="center">
 
-**Storm Details**  
-![Storm Details](screenshots/storm-details.png)
+<img src="screenshots/weather-info.png" alt="Weather Info" width="180"/>
+<img src="screenshots/capture-storm.png" alt="Capture Storm" width="180"/>
+<img src="screenshots/storm-details.png" alt="Storm Details" width="180"/>
+<img src="screenshots/success-popup.png" alt="Success Popup" width="180"/>
+<img src="screenshots/saved-entries.png" alt="Saved Entries" width="180"/>
 
-**Success Popup**  
-![Success Popup](screenshots/success-popup.png)
-
-**Saved Entries**  
-![Saved Entries](screenshots/saved-entries.png)
-
----
+</div>
 
 ## Try Instantly
 
