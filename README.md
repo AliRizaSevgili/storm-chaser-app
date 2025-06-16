@@ -29,20 +29,30 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 
 <div align="center">
 
-<img src="screenshots/weather-info.png" alt="Weather Info" width="180"/><br/>
-<b>Weather Info</b>
+  <div style="display: inline-block; margin: 0 18px;">
+    <img src="screenshots/weather-info.png" alt="Weather Info" width="150"/><br/>
+    <b>Weather Info</b>
+  </div>
 
-<img src="screenshots/capture-storm.png" alt="Capture Storm" width="180"/><br/>
-<b>Capture Storm</b>
+  <div style="display: inline-block; margin: 0 18px;">
+    <img src="screenshots/capture-storm.png" alt="Capture Storm" width="150"/><br/>
+    <b>Capture Storm</b>
+  </div>
 
-<img src="screenshots/storm-details.png" alt="Storm Details" width="180"/><br/>
-<b>Storm Details / Metadata Entry</b>
+  <div style="display: inline-block; margin: 0 18px;">
+    <img src="screenshots/storm-details.png" alt="Storm Details" width="150"/><br/>
+    <b>Storm Details</b>
+  </div>
 
-<img src="screenshots/success-popup.png" alt="Success Popup" width="180"/><br/>
-<b>Success Popup</b>
+  <div style="display: inline-block; margin: 0 18px;">
+    <img src="screenshots/success-popup.png" alt="Success Popup" width="150"/><br/>
+    <b>Success Popup</b>
+  </div>
 
-<img src="screenshots/saved-entries.png" alt="Saved Entries" width="180"/><br/>
-<b>Saved Entries</b>
+  <div style="display: inline-block; margin: 0 18px;">
+    <img src="screenshots/saved-entries.png" alt="Saved Entries" width="150"/><br/>
+    <b>Saved Entries</b>
+  </div>
 
 </div>
 
