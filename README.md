@@ -26,7 +26,9 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 ---
 
 ## Screenshots
+![Weather Info](screenshots/weather-info.png)
 
+<<<<<<< HEAD
 **Weather Info**  
 ![Weather Info](screenshots/weather-info.png)
 
@@ -43,6 +45,19 @@ This project was built as a portfolio/demo app to showcase mobile development sk
 ![Saved Entries](screenshots/saved-entries.png)
 
 ---
+=======
+![Capture Storm](screenshots/capture-storm.png)
+
+![Storm Details](screenshots/storm-details.png)
+
+![Success Popup](screenshots/success-popup.png)
+
+![Saved Entries](screenshots/saved-entries.png)
+
+![QR Code](screenshots/qr.png)
+
+
+>>>>>>> 20d9229f202d9d0ddf00756b6e549296cfdfd04a
 
 ## Try Instantly
 
